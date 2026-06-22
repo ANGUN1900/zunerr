@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#a30000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    background: #b30000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* Hero */
+.hero-section{
+    display:grid;
+    width:100%;
+    height:700px;
+}
+
+.hero-section  img{
+    width:100%;
+    height:700px;
+}
+
+/* Products */
+.products{
+    text-align:center;
+    padding:60px 10%;
+}
+
+.products h2{
+    margin-bottom:20px;
+}
+
+.products span{
+    color:#a30000;
+}
+
+.products p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+
+/* About */
+.about{
+    text-align:center;
+    padding:70px 120px;
+    background:white;
+}
+
+.about h4{
+    color:red;
+    margin-bottom:15px;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+.about p{
+    margin-bottom:15px;
+    color:#000000;
+    line-height:1.8;
+}
+
+/* Gallery */
+.gallery{
+    width:80%;
+    margin:50px auto;
+}
+
+.big-image img{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+}
+
+.small-images{
+    display:flex;
+}
+
+.small-images img{
+    width:50%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* Story */
+.story{
+    background:white;
+    padding:80px;
+}
+
+.story-text{
+    max-width:700px;
+}
+
+.story h4{
+    color:red;
+    margin-bottom:20px;
+}
+
+.story p{
+    color:#0a0606;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* Team */
+.team{
+    text-align:center;
+    padding:50px;
+}
+
+.team img{
+    width:80%;
+    max-width:900px;
+}
+
+/* Footer */
+footer{
+    background:#161822;
+    color:white;
+    padding:50px;
+}
+
+footer h3{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+footer span{
+    color:red;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.footer-content h4{
+    margin-bottom:15px;
+}
+
+.footer-content p{
+    margin-bottom:8px;
+}
+
+/* Three-column information track */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 8%;
+}
+
+.footer-col h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-col p {
+    font-size: 13px;
+    color: #cccccc;
+    margin-bottom: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --- Tablet and Desktop Media Queries --- */
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns side-by-side */
+    }
+}
+
+@media (min-width: 992px) {
+    /* Optional visual style change: aligns image and layout track horizontally if required */
+    .dark-banner {
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    header nav ul {
+        gap: 15px;
+    }
+}

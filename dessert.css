@@ -1,0 +1,595 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    background: #b30000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+page-container hero-section{
+    display:grid;
+    width:100%;
+    height:1000px;
+}
+
+page-container hero-section img{
+    width:100%;
+    height:1000px;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#a30000;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    background: #b30000;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* Hero */
+.hero-section{
+    display:grid;
+    width:100%;
+    height:900px;
+}
+
+.hero-section  img{
+    width:100%;
+    height:900px;
+}
+
+.products{
+    text-align:center;
+    padding:60px 10%;
+}
+
+.products h2{
+    margin-bottom:30px;
+}
+
+.products span{
+    color:#a30000;
+}
+
+.products p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:60px;
+}
+
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:350px;
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    justify-items: start;
+}
+
+
+
+.card h4{
+    margin:20px 0;
+}
+
+.menu-description {
+            color: #000000;
+            font-size: 16px;
+            line-height: 1.6;
+}
+.text-content {
+            flex: 2;
+            text-align: center; 
+            max-width: 1000px;
+            padding-left: 16px;
+            font-size: 16px;
+            color: #a30000;
+            margin: 50px 0 ;
+}
+
+.showcase-container {
+            display: flex;
+            width: 100%;
+            max-width: 2500px;
+            min-height: 450px;
+            background-color: #1a1a1a; 
+        }
+
+        .image-section {
+            flex: 1.2;
+            background-color: #d2cccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+           
+        }
+        .text-section {
+            flex: 0.8;
+            background-color: #1a1a1a; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 60px;
+            text-align: center;
+            box-sizing: border-box;
+            
+        }
+
+        .dish-heading {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+        }
+
+        .dish-description {
+            color: #e0e0e0;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width: 1440px) {
+            .showcase-container {
+                flex-direction: column;
+            }
+            .text-section {
+                padding: 60px 30px;
+            }
+        }
+/* Container layout to push text left and image right */
+.zunerr-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;              /* Creates the clean white space between elements */
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Force text on the left, image on the right */
+.zunerr-row.reverse {
+    flex-direction: row; 
+}
+
+/* Text Section Styling */
+.menu-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.dish-description {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fffdfd;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 380px;       /* CRITICAL: Restricts width so text wraps exactly like the image */
+}
+
+/* Image Section Styling */
+.zunerr-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.zunerr-image img {
+    width: 320px;           /* Sets a balanced square aspect ratio */
+    height: 320px;
+    object-fit: cover;
+    border-radius: 30px;    /* Adds the smooth, distinct rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Soft, subtle blend shadow */
+}
+
+/* Responsive adjustment for small screens/mobile */
+@media (max-width: 768px) {
+    .zunerr-row {
+        flex-direction: column-reverse; /* Stacks text underneath image on mobile */
+        gap: 30px;
+    }
+}
+.zunerr-row.reverse {
+    flex-direction: row; 
+}
+
+/* Text Section Styling */
+.zunerr-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.dish-zunerr {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 380px;       /* CRITICAL: Restricts width so text wraps exactly like the image */
+}
+
+/* Container layout to hold elements side-by-side */
+.kaka-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;              
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Image Styling */
+.menu-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.kaka-image img {
+    width: 320px;           /* Balanced square aspect ratio */
+    height: 320px;
+    object-fit: cover;
+    border-radius: 30px;    /* Distinct rounded corners matching the menu layout */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Text Styling */
+.kaka-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.dish-kaka {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 380px;       /* Restricts width so it wraps beautifully into a neat block */
+}
+
+/* Responsive view for mobile screens */
+@media (max-width: 768px) {
+    .menu-row {
+        flex-direction: column; /* Stacks image on top of text on mobile screens */
+        gap: 30px;
+    }
+}
+.kaka-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+/* Full-width dark container split 50/50 */
+.dark-banner {
+    display: flex;
+    background-color: #1a1a1a; /* Soft matte black matching the menu layout */
+    width: 100%;
+    min-height: 450px; /* Ensures a spacious and luxurious height */
+    overflow: hidden;
+}
+
+/* Text Container Styling */
+.banner-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Headings use a clean serif look */
+.banner-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    max-width: 400px;
+}
+
+/* Descriptions use elegant, lightly-faded italic typography */
+.banner-description {
+    font-size: 1.15rem;
+    color: #ffffff; /* Slightly softer white for contrast */
+    line-height: 1.7;
+    max-width: 420px; /* Restricts width to wrap beautifully exactly like the image */
+}
+
+/* Image Container Styling */
+.banner-image {
+    width: 50%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image stretches perfectly without distortion */
+    display: block;
+}
+
+/* Clean fallback layout for mobile viewports */
+@media (max-width: 768px) {
+    .dark-banner {
+        flex-direction: column;
+    }
+    .banner-text, .banner-image {
+        width: 100%;
+    }
+    .banner-text {
+        padding: 50px 20px;
+    }
+    .banner-image {
+        height: 350px;
+    }
+}
+/* Container styling for the entire footer section */
+.contact-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 60px;
+    background-color: #ffffff;
+    font-family: 'Georgia', serif; /* Smooth, elegant italic look matching the source */
+    font-style: italic;
+}
+
+/* Header style with custom spacing and red highlight color */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 80px; /* Generous top gap separating content rows */
+}
+
+.section-title span {
+    color: #970303; /* Red accent matching 'US' */
+}
+
+/* Flex layout mapping out three distinct visual pillars */
+.contact-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Individual Column Settings */
+.contact-column {
+    flex: 1;
+}
+
+.contact-column h3 {
+    font-size: 1.25rem;
+    color: #a90000; /* Bold red headers for column titles */
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.contact-column p {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* Blocks grouping individual labels directly with text data */
+.info-group {
+    margin-bottom: 25px;
+}
+
+.info-group .label {
+    display: block;
+    color: #c20303; /* Accent red styling for dynamic text triggers */
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+}
+
+/* Highlight style rule matching target custom layout */
+.info-group .highlight-text {
+    color: #720000; 
+}
+
+/* Time slots container spacing out content lines cleanly */
+.time-row {
+    margin-bottom: 15px;
+}
+
+.time-row p {
+    margin: 0;
+}
+
+/* Fluid design mapping rules formatting cleanly to mobile screen rules */
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center; /* Centers alignment structures when screen size scales down */
+    }
+}
+/* Gallery */
+.gallery{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:90px 100px;
+}
+
+.gallery-items{
+    display:flex;
+    gap:20px;
+}
+
+.gallery-items img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    
+}
+
+.arrow{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#a30000;
+    color:white;
+    cursor:pointer;
+}
+
+/* Footer */
+footer{
+    background:#161822;
+    color:white;
+    padding:50px;
+}
+
+footer h3{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+footer span{
+    color:red;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.footer-content h4{
+    margin-bottom:15px;
+}
+
+.footer-content p{
+    margin-bottom:8px;
+}
+
+/* Three-column information track */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 8%;
+}
+
+.footer-col h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-col p {
+    font-size: 13px;
+    color: #cccccc;
+    margin-bottom: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --- Tablet and Desktop Media Queries --- */
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns side-by-side */
+    }
+}
+
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    header nav ul {
+        gap: 15px;
+    }
+}
